@@ -35,7 +35,7 @@ export default function Detail() {
       navigate("/404");
     }
     dispatch(reset());
-  }, [isError]);
+  }, [isError, dispatch, navigate]);
 
   useEffect(() => {
     if (actionSuccess) {
@@ -44,7 +44,7 @@ export default function Detail() {
     }
 
     dispatch(reset());
-  }, [actionSuccess]);
+  }, [actionSuccess, dispatch, navigate]);
 
   if (isLoading || !postById) {
     return <Spinner />;

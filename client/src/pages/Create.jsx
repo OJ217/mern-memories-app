@@ -40,7 +40,7 @@ export default function Create() {
     }
 
     dispatch(reset());
-  }, [isError, actionSuccess, message, dispatch]);
+  }, [isError, actionSuccess, message, dispatch, navigate]);
 
   return (
     <PostForm

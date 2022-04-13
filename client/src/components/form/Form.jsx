@@ -1,6 +1,6 @@
 /** @format */
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { uploadImage } from "../../utilities/ImageUpload";
 import { RiCloseCircleFill } from "react-icons/ri";
 

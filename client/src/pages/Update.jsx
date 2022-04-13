@@ -61,7 +61,7 @@ export default function Update() {
     }
 
     dispatch(reset());
-  }, [isError, actionSuccess, message, dispatch]);
+  }, [isError, actionSuccess, message, dispatch, navigate]);
 
   if (isLoading || !postById) {
     return <Spinner />;

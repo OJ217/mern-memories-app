@@ -20,7 +20,7 @@ export default function Home() {
     };
   }, [dispatch]);
 
-  if (isLoading || posts.length == 0) {
+  if (isLoading || posts.length === 0) {
     return <Spinner />;
   }
 
