@@ -1,0 +1,98 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --toastify-color-success: #33b371;
+  --toastify-color-error: #fb7284;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 375px;
+  height: 100%;
+  background-color: #f7f8fc;
+}
+
+* {
+  outline: none;
+  font-family: "GIP", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+p::selection,
+div::selection {
+  @apply bg-slate-900 text-white;
+}
+
+input[type="file"] {
+  @apply w-full;
+}
+
+button,
+input {
+  font-weight: inherit;
+}
+
+@font-face {
+  font-family: "GIP";
+  src: local("GIP-Regular"), url("../public/fonts/GIP-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "GIP";
+  font-weight: 100;
+  src: local("GIP-Thin"), url("../public/fonts/GIP-Thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "GIP";
+  font-weight: 200;
+  src: local("GIP-UltraLight"), url("../public/fonts/GIP-UltraLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "GIP";
+  font-weight: 300;
+  src: local("GIP-Light"), url("../public/fonts/GIP-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "GIP";
+  font-weight: 500;
+  src: local("GIP-Medium"), url("../public/fonts/GIP-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "GIP";
+  font-weight: 600;
+  src: local("GIP-SemiBold"), url("../public/fonts/GIP-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "GIP";
+  font-weight: 700;
+  src: local("GIP-Bold"), url("../public/fonts/GIP-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "GIP";
+  font-weight: 800;
+  src: local("GIP-ExtraBold"), url("../public/fonts/GIP-ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "GIP";
+  font-weight: 900;
+  src: local("GIP-Black"), url("../public/fonts/GIP-Black.otf") format("opentype");
+}
